@@ -7,5 +7,5 @@ from products.api_endpoints.SizeUpdate.serializers import SizeUpdateSerializer
 class SizeUpdateAPIView(UpdateAPIView):
     queryset = Size.objects.all()
     serializer_class = SizeUpdateSerializer
-    lookup_field = "slug"
+    lookup_field = "pk"
 

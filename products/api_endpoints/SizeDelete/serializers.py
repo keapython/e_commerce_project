@@ -6,4 +6,4 @@ from products.models import Size
 class SizeDeleteSerializer(serializers.ModelSerializer):
     class Meta:
         model = Size
-        fields = ['slug']
+        fields = ['id']

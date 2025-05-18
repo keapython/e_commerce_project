@@ -14,5 +14,5 @@ class SizeRetrieveAPIView(RetrieveAPIView):
     queryset = Size.objects.all()
     serializer_class = SizeListSerializer
     permission_classes = []
-    lookup_field = "slug"
+    lookup_field = "pk"
     

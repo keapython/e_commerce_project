@@ -21,7 +21,7 @@ class CategoryRetrieveAPIView(RetrieveAPIView):
     serializer_class = CategoryListSerializer
     permission_classes = []
     lookup_field = "slug"
-    # lookup_field = "pk"
+    # lookup_field = "pk"  usually we search by pk, not by slug
 
 
 

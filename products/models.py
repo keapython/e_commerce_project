@@ -36,7 +36,7 @@ class Brand(BaseModel):
     logo = models.ImageField(upload_to='brands', null=True, blank=True)
 
     def __str__(self):
-        return self.name
+        return self.name    
     
 
 class Category(BaseModel):

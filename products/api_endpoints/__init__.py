@@ -11,3 +11,10 @@ from .ColorCreate import *
 from .ColorList import *
 from .ColorDelete import *
 from .ColorUpdate import *
+from .ColorRetrieve import *
+from .BrandCreate import *
+from .BrandList import *
+from .BrandRetrieve import *
+from .BrandUpdate import *
+from .BrandDelete import *
+

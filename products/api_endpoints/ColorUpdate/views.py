@@ -7,4 +7,4 @@ from products.api_endpoints.ColorUpdate.serializers import ColorUpdateSerializer
 class ColorUpdateAPIView(UpdateAPIView):
     queryset = Color.objects.all()
     serializer_class = ColorUpdateSerializer
-    lookup_field = "slug"
+    lookup_field = "pk"

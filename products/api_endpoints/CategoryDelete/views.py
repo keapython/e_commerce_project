@@ -7,7 +7,7 @@ from products.api_endpoints.CategoryDelete.serializers import CategoryDeleteSeri
 class CategoryDeleteAPIView(DestroyAPIView):
     queryset = Category.objects.all()
     serializer_class = CategoryDeleteSerializer
-    lookup_field = "slug"
+    lookup_field = "pk"
 
     def delete(self, request, *args, **kwargs):
         print(request, args, kwargs)
