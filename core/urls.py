@@ -46,6 +46,7 @@ urlpatterns = [
     path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('accounts/', include ('accounts.urls')),
     path('products/', include ('products.urls')),
+    path('common/', include ('common.urls')),
     path('admin/', admin.site.urls),
      # Swagger and Redoc URLs
     re_path(r'^swagger(?P<format>\.json|\.yaml)$', schema_view.without_ui(cache_timeout=0), name='schema-json'),
